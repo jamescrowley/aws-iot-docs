@@ -5,19 +5,19 @@ The Device Shadow service uses reserved MQTT topics to enable applications and d
 The following are the MQTT topics used for interacting with shadows\.
 
 **Topics**
-+ [/Update](#update-pub-sub-topic)
++ [/update](#update-pub-sub-topic)
 + [/update/accepted](#update-accepted-pub-sub-topic)
 + [/update/documents](#update-documents-pub-sub-topic)
 + [/update/rejected](#update-rejected-pub-sub-topic)
 + [/update/delta](#update-delta-pub-sub-topic)
-+ [/Get](#get-pub-sub-topic)
++ [/get](#get-pub-sub-topic)
 + [/get/accepted](#get-accepted-pub-sub-topic)
 + [/get/rejected](#get-rejected-pub-sub-topic)
-+ [/Delete](#delete-pub-sub-topic)
++ [/delete](#delete-pub-sub-topic)
 + [/delete/accepted](#delete-accepted-pub-sub-topic)
 + [/delete/rejected](#delete-rejected-pub-sub-topic)
 
-## /Update<a name="update-pub-sub-topic"></a>
+## /update<a name="update-pub-sub-topic"></a>
 
 Publish a request state document to this topic to update the device's shadow:
 
@@ -204,7 +204,7 @@ The following is an example of the required policy:
 }
 ```
 
-## /Get<a name="get-pub-sub-topic"></a>
+## /get<a name="get-pub-sub-topic"></a>
 
 Publish an empty message to this topic to get the device's shadow:
 
@@ -294,7 +294,7 @@ The following is an example of the required policy:
 }
 ```
 
-## /Delete<a name="delete-pub-sub-topic"></a>
+## /delete<a name="delete-pub-sub-topic"></a>
 
 To delete a device's shadow, publish an empty message to the delete topic:
 
